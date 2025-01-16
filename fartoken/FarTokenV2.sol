@@ -801,7 +801,7 @@ contract FarTokenV2 is IFarTokenV2, Initializable, ERC20Upgradeable, ReentrancyG
         if (amount > reservedSupply) revert InvalidAmount();
         
         _verifySig(
-            _hashTypedDataV4(keccak256(abi.encode(WITHDRAW_FROM_RESERVE_TYPEHASH, to, amount, _useNonce(operator), deadline))),
+            _hashTypedDataV4(keccak256(abi.encode(WITHDRAW_FROM_RESERVE_TYPEHASH, to, amount, _useNonce(to), deadline))),
             operator,
             deadline,
             signature
