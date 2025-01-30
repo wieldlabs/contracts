@@ -29,3 +29,12 @@ This folder also contains applicable ABIs for .cast handles.
 - **OPBebRegistryBetaController** deployed to:
   [`0x8db531fe6bea7b474c7735879e9a1000e819bd1d`](https://optimistic.etherscan.io/address/0x8db531fe6bea7b474c7735879e9a1000e819bd1d)
 - Base Registar = `.cast` TLD with domains prefixed with `op_` (enforced by `OPBebRegistryBetaController`)
+
+# Base
+
+- [OpenSea Collection](https://opensea.io/collection/castbase)
+- **BaseRegistrar** deployed to:
+  [`0xf2b35faadbcded342a1a4f1e6c95b977e85439fa`](https://basescan.org/address/0xf2b35faadbcded342a1a4f1e6c95b977e85439fa)
+- **BaseBebRegistryBetaController** deployed to:
+  [`0xdd7672abb72542fd30307159bd898a273b1a14af`](https://basescan.org/address/0xdd7672abb72542fd30307159bd898a273b1a14af)
+- Base Registar = `.cast` TLD with domains prefixed with `base_` (enforced by `BaseBebRegistryBetaController`)
