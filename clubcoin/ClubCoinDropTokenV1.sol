@@ -25,8 +25,9 @@ contract ClubCoinDropTokenV1 is IClubCoinDropToken, Initializable, ERC20Upgradea
     uint256 public constant MIN_REWARD_AMOUNT = 1e18; // Minimum reward (1 token)
     uint256 public constant MAX_REWARD_AMOUNT = 800_000e18; // Maximum reward (800k tokens, 80% of MAX_SUPPLY)
     uint24 internal constant LP_FEE = 10000; // 1% fee tier for Uniswap V3
-    uint160 internal constant POOL_SQRT_PRICE_X96_WETH_0 = 400950665883918763141200546267337;
-    uint160 internal constant POOL_SQRT_PRICE_X96_TOKEN_0 = 15655546353934715619853339;
+    // Sqrt price with 1 ETH = ~$2,000, token = $1
+    uint160 internal constant POOL_SQRT_PRICE_X96_WETH_0 = 2505414483750479241346919126;
+    uint160 internal constant POOL_SQRT_PRICE_X96_TOKEN_0 = 79228162514264337593543950336;
     
     // Contract references
     address public nftDropContract;
